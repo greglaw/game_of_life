@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="cellular_automaton.js"></script>
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+  </head>
+  <body>
+  <h1>conway's game of life</h1>
+  <div id="goldiv"></div>
+  <div id="controls">
+    <button onclick="update()">Step</button>
+    <button onclick="initialize()">Reset</button>
+    <button onclick="randomize()">Randomize</button>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <p>Generations: <span id="generation_count"></p>
+  </div>
+  </body>
+  <script>
+  initialize();
+  </script>
+</html

@@ -1,0 +1,48 @@
+body {
+    background-color: #000;
+    color: #ddd;
+    font-family: monospace;
+}
+#goldiv {
+    text-align: center;
+    width = 400px;
+    height = 250px;
+    margin: auto;
+}
+div.cellrow {
+    width: 400px;
+    height: 10px;
+    margin: auto;
+    background: white;
+}
+#goldiv > div.cellrow > div.cell {
+    float: left;
+}
+div.cell {
+    width: 10px;
+    height: 10px;
+}
+div.cell.alive {
+    background: green;
+}
+div.cell.alive:hover {
+    background: rgba(0, 255, 0, 0.5);
+}
+div.cell.dead {
+    background: #AAA;
+}
+div.cell.dead:hover {
+    background: rgba(122, 122, 122, 0.5);
+}
+pre {
+    margin: 0;
+}
+#controls {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}

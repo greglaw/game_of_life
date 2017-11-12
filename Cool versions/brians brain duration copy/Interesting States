@@ -1,0 +1,78 @@
+Interesting States
+Score increase: 80
+Score decrease: 5
+Death time: 2
+Life time: 1
+Rule: neighbors >= 2
+
+
+Score increase: 80
+Score decrease: 5
+Death time: 3
+Life time: 1
+Rule: neighbors >= 2
+
+
+Score increase: 80
+Score decrease: 5
+Death time: 9
+Life time: 1
+Rule: neighbors >= 2
+
+Interestingly, some of these only are effective when staged up through lower death rate values
+Suggesting that the previous states order the subsequent states somewhow
+
+
+
+Score increase: 80
+Score decrease: 5
+Death time: 10
+Life time: 1
+Rule: neighbors >= 2
+
+
+Score increase: 80
+Score decrease: 1
+Death time: 11
+Life time: 1
+Rule: neighbors >= 2
+Description: This one seems to form striations in the scores, leading to big parallel activations
+
+
+Score increase: 87
+Score decrease: 1
+Death time: 3
+Life time: 1
+Rule: neighbors >= 2
+
+Score increase: 80
+Score decrease: 5
+Death time: 3
+Life time: 1
+Neighbor Score Count: 3
+Neighbor Min Score Ratio: .1
+Neighbor Max Score Ratio: .4
+Rule: neighbors >= 2
+
+
+Score increase: 100
+Score decrease: 2
+Death time: 6
+Life time: 1
+Neighbor Score Count: 1
+Neighbor Min Score Ratio: .1
+Neighbor Max Score Ratio: .2
+Rule: neighbors >= 2
+Description:
+    Creates interesting patterns with the score attribute
+
+Score increase: 100
+Score decrease: 2
+Death time: 3
+Life time: 1
+Neighbor Score Count: 1
+Neighbor Min Score Ratio: .1
+Neighbor Max Score Ratio: .2
+Rule: neighbors >= 2
+Description:
+    Creates interesting patterns with the score attribute

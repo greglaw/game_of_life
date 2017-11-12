@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <script src="cellular_automaton.js"></script>
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+  </head>
+  <body>
+  <h1>conway's game of life</h1>
+  <div id="goldiv"></div>
+  <div class="side_controls">
+    <form>
+      <div class="form-group">
+          <label>Score increase for being alive:</label> 
+          <input type="number" class="form-control" id="_scoreIncrease" value="80">
+      </div>
+
+      <div class="form-group">
+        <label>
+          Score decrease for being dead:
+        </label>
+        <input type="number" class="form-control" id="_scoreDecrease" value="5">
+      </div>
+      <br>
+      <div class="form-group">
+        <label>
+          Death Time:
+        </label>
+        <input type="number" class="form-control" id="_deathTime" value="1">
+      </div>
+
+      <div class="form-group">
+        <label>
+          Life Time:
+        </label>
+        <input type="number" class="form-control" id="_lifeTime" value="1">
+      </div>
+
+      <br>
+     <div class="form-group">
+        <label>
+          Neighbor Score Count:
+        </label>
+        <input type="number" class="form-control" id="_neighborScoreCount" value="1">
+      </div>
+
+     <div class="form-group">
+        <label>
+          Min Neighbor Score Ratio:
+        </label>
+        <input type="number" class="form-control" id="_neighborMinScoreRatio" value=".2">
+      </div>
+
+     <div class="form-group">
+        <label>
+          Max Neighbor Score Ratio:
+        </label>
+        <input type="number" class="form-control" id="_neighborMaxScoreRatio" value=".8">
+      </div>
+
+
+        <button class="btn btn-sm btn-default" type="button" id="submit">Set Values</button>
+    </form>
+  </div>
+  <div id="controls">
+    <button class="btn btn-sm btn-default" onclick="update()">Step</button>
+    <button class="btn btn-sm btn-default" onclick="initialize()">Reset</button>
+    <button class="btn btn-sm btn-default" onclick="randomize()">Randomize</button>
+    <button class="btn btn-sm btn-default" onclick="start()">Start</button>
+    <button class="btn btn-sm btn-default" onclick="stop()">Stop</button>
+    <p>Generations: <span id="generation_count"></p>
+  </div>
+  </body>
+  <script>
+  initialize();
+  </script>
+</html
